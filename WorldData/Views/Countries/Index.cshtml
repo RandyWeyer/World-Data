@@ -1,4 +1,15 @@
 <h1>All Countries</h1>
+<form action="/search" method="post">
+  <label for="searchtype">Filter by Datatype</label>
+  <select id="searchtype" name="searchtype">
+    <option value="Name">Country Name</option>
+    <option value="GovernmentForm">Type of Government</option>
+    <option value="Population">Population</option>
+  </select>
+  <label for="userinput">Search</label>
+  <input type="text" id="userinput" name="userinput" class="form-control">
+  <button type="submit">Search</button>
+</form>
 <table>
   <tr>
     <td><strong>Name</strong></td>

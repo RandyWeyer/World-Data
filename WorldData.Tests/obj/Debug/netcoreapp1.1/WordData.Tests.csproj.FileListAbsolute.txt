@@ -1,0 +1,4 @@
+/Users/Guest/Desktop/WorldData.Solution/WorldData.Tests/bin/Debug/netcoreapp1.1/WordData.Tests.deps.json
+/Users/Guest/Desktop/WorldData.Solution/WorldData.Tests/bin/Debug/netcoreapp1.1/WordData.Tests.runtimeconfig.json
+/Users/Guest/Desktop/WorldData.Solution/WorldData.Tests/bin/Debug/netcoreapp1.1/WordData.Tests.runtimeconfig.dev.json
+/Users/Guest/Desktop/WorldData.Solution/WorldData.Tests/obj/Debug/netcoreapp1.1/WordData.Tests.AssemblyInfo.cs

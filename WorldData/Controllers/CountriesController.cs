@@ -13,6 +13,13 @@ namespace WorldData.Controllers
         return View(allCountries);
     }
 
+    [HttpPost("/search")]
+    public ActionResult Search(string searchtype, string userinput)
+    {
+        List<Country> allCountries = Country.SearchCountries(searchtype, userinput);
+        return View("Index", allCountries);
+    }
+
     [HttpGet("/countries/new")]
     public ActionResult CreateForm()
     {

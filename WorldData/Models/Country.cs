@@ -88,7 +88,7 @@ namespace WorldData.Models
       MySqlConnection conn = DB.Connection();
       conn.Open();
       MySqlCommand cmd = conn.CreateCommand() as MySqlCommand;
-      cmd.CommandText = @"SELECT * FROM country WHERE "+searchable+" LIKE '" +userInput+"';";
+      cmd.CommandText = @"SELECT * FROM country WHERE "+searchable+" LIKE '%" +userInput+"%';";
       MySqlDataReader rdr = cmd.ExecuteReader() as MySqlDataReader;
       while(rdr.Read())
       {
@@ -106,5 +106,18 @@ namespace WorldData.Models
       }
       return allCountries;
     }
+    public static void DeleteAll()
+        {
+          MySqlConnection conn = DB.Connection();
+          conn.Open();
+          var cmd = conn.CreateCommand() as MySqlCommand;
+          cmd.CommandText = @"DELETE FROM country;";
+          cmd.ExecuteNonQuery();
+          conn.Close();
+          if (conn != null)
+          {
+              conn.Dispose();
+          }
+        }
   }
 }
