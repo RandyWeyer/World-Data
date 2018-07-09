@@ -1,0 +1,18 @@
+<h1>All Countries</h1>
+<table>
+  <tr>
+    <td><strong>Name</strong></td>
+    <td><strong>Population</strong></td>
+    <td><strong>Surface Area</strong></td>
+    <td><strong>Government Type</strong></td>
+  </tr>
+  @foreach (var country in Model)
+  {
+  <tr>
+    <td>@country.GetName()</td>
+    <td>@country.GetPopulation()</td>
+    <td>@country.GetSurfaceArea()</td>
+    <td>@country.GetGovernment()</td>
+  </tr>
+  }
+</table>

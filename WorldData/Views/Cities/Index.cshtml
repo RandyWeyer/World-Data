@@ -1,0 +1,16 @@
+<h1>All Countries</h1>
+<table>
+  <tr>
+    <td><strong>Name</strong></td>
+    <td><strong>District</td>
+    <td><strong>Population</strong></td>
+  </tr>
+  @foreach (var city in Model)
+  {
+  <tr>
+    <td>@city.GetName()</td>
+    <td>@city.GetDistrict()</td>
+    <td>@city.GetPopulation()</td>
+  </tr>
+  }
+</table>
